@@ -4,7 +4,7 @@ const path = require("path");
 const apiroutes = require("./apiroutes.js")
 const router = express.Router();
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; //for deployment
 
 //Middleware
 app.use(express.json());
